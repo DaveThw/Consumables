@@ -3,52 +3,83 @@
 <head>
 	<meta charset="UTF-8">
 	<title>TRBSE Consumables Stock</title>
+	<style>
+		html, body {
+			padding:    0;
+			margin:     0;
+			height:     100%;
+			width:      100%;
+		}
+		form {
+			width: 100%;
+		}
+		td.send {
+			text-align: center;
+		}
+		input.name {
+			width: 20ex;
+		}
+		input.num {
+			width: 6ex;
+		}
+		input.where {
+			width: 20ex;
+		}
+	</style>
 </head>
 <body>
 	<h1>Theatre Royal Consumables Stock</h1> 
 	<form class="form" target="_self" method="POST" action="https://docs.google.com/forms/d/e/1FAIpQLSf9ItSVr5F0IIpZIimlygreExpEQLCeiaZiUSqqR_NC0yXoUQ/formResponse">
 		<table>
 			<tr>
-				<td><label>Name</label></td>
-				<td colspan="5"><input name="entry.610236435" type="text" required></td>
+				<td><label>Name:</label></td>
+				<td colspan="5"><input name="entry.610236435" type="text" class="name" required></td>
 			</tr>
-			<tr>
-				<td>Type</td>
-				<td>Usage</td>
-				<td>In the Cage<br>
-				    Bottom Shelf</td>
-				<td>Houselights Bag</td>
-				<td>Elsewhere...</td>
-				<td>(where?)</td>
-			</tr>
-			<tr>
-				<td>Candle Bulbs, BC, 42W</td>
-				<td>Houselights</td>
-				<td><input name="entry.695185305" type="number" size="3"></td>
-				<td><input name="entry.314564879" type="number" size="3"></td>
-				<td><input name="entry.615518752" type="number" size="3"></td>
-				<td><input name="" type="text" size="15"></td>
-			</tr>
-			<tr>
-				<td>GU10, 50W</td>
-				<td>Houselights</td>
-				<td><input name="" type="number" size="3"></td>
-				<td><input name="" type="number" size="3"></td>
-				<td><input name="" type="number" size="3"></td>
-				<td><input name="" type="text" size="15"></td>
-			</tr>
-			<tr>
-				<td>Halogen Capsule, 50W 12V</td>
-				<td>Houselights / FoH</td>
-				<td><input name="" type="number" size="3"></td>
-				<td><input name="" type="number" size="3"></td>
-				<td><input name="" type="number" size="3"></td>
-				<td><input name="" type="text" size="15"></td>
-			</tr>
-			<tr>
-				<td colspan="6" ><input type="submit" value="Send"></td>
-			</tr>
-		</table
+		</table>
+		<table>
+			<thead>
+				<tr>
+					<td>Type</td>
+					<td>Usage</td>
+					<td>In the Cage<br>
+					    (Bottom Shelf)</td>
+					<td>Houselights Bag</td>
+					<td>Elsewhere...</td>
+					<td>(where?)</td>
+				</tr>
+			</thead>
+			<tfoot>
+				<tr>
+					<td colspan="6" class="send"><input type="submit" value="Send"></td>
+				</tr>
+			</tfoot>
+			<tbody>
+				<tr>
+					<td>Candle Bulbs, BC, 42W</td>
+					<td>Houselights</td>
+					<td><input name="entry.695185305" type="number" class="num"></td>
+					<td><input name="entry.314564879" type="number" class="num"></td>
+					<td><input name="entry.615518752" type="number" class="num"></td>
+					<td><input name="" type="text" class="where"></td>
+				</tr>
+				<tr>
+					<td>GU10, 50W</td>
+					<td>Houselights</td>
+					<td><input name="" type="number" class="num"></td>
+					<td><input name="" type="number" class="num"></td>
+					<td><input name="" type="number" class="num"></td>
+					<td><input name="" type="text" class="where"></td>
+				</tr>
+				<tr>
+					<td>Halogen Capsule, 50W 12V</td>
+					<td>Houselights / FoH</td>
+					<td><input name="" type="number" class="num"></td>
+					<td><input name="" type="number" class="num"></td>
+					<td><input name="" type="number" class="num"></td>
+					<td><input name="" type="text" class="where"></td>
+				</tr>
+			<tbody>
+		</table>
 	</form>
 </body>
 </html>
