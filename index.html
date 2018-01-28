@@ -10,11 +10,15 @@
 			height:     100%;
 			width:      100%;
 		}
-		form {
+		table {
 			width: 100%;
 		}
 		td.send {
 			text-align: center;
+		}
+		input {
+			border-width: 1px;
+			border-style: solid;
 		}
 		input.name {
 			width: 20ex;
@@ -23,7 +27,7 @@
 			width: 6ex;
 		}
 		input.where {
-			width: 20ex;
+			width: 99%;
 		}
 	</style>
 </head>
@@ -33,9 +37,10 @@
 		<table>
 			<tr>
 				<td><label>Name:</label></td>
-				<td colspan="5"><input name="entry.610236435" type="text" class="name" required></td>
+				<td><input name="entry.610236435" type="text" class="name" required></td>
 			</tr>
 		</table>
+		<br>
 		<table>
 			<thead>
 				<tr>
@@ -78,7 +83,7 @@
 					<td><input name="" type="number" class="num"></td>
 					<td><input name="" type="text" class="where"></td>
 				</tr>
-			<tbody>
+			</tbody>
 		</table>
 	</form>
 </body>
